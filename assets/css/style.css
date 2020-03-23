@@ -1,15 +1,18 @@
 
+/* apply values to every element in the page */
 *   {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* apply values to entire body */
 body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* apply styles to <header> */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
