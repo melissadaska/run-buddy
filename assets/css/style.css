@@ -343,19 +343,31 @@ footer a {
     display: flex;
     padding: 15px;
     align-items: flex-end;
-    background-image: linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 0.3));
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .trainer-img::after {
     content: "";
     height: 100%;
     width: 100%;
-    background: rgba(252, 225, 56, 0.3);
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.trainer:hover .trainer-img::after {
+    background: linear-gradient(rgba(252,255,56, 0.3), var(--secondary-color));
+    opacity: 1;
+    transition: .5s;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+    opacity: 1;
 }
 
 .trainer-img h3 {
@@ -363,12 +375,16 @@ footer a {
     z-index: 9980;
     font-size: 28px;
     margin-bottom: 5px;
+    top: 200px;
+    transition: .6s;
 }
 
 .trainer-img h4 {
     position: relative;
     z-index: 9980;
     font-size: 22px;
+    top: 200px;
+    transition: .6s;
 }
 
 .trainer-bio {
