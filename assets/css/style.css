@@ -392,6 +392,18 @@ footer a {
     line-height: 1.3;
 }
 
+.trainer-bio h3 {
+    font-size: 28px;
+    display: none;
+}
+
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: none;
+}
+
 .trainer-1 {
     background-image: url("../images/trainer-1.jpg");
 }
@@ -629,6 +641,27 @@ footer a {
     .step-text {
         flex: 100%;
     }
+
+    .trainer-img h3 {
+        display: none;
+    }
+
+    .trainer-img h4 {
+        display: none;
+    }
+
+    .trainer-img::after {
+        display: none;
+    }
+
+    .trainer-bio h3 {
+        display: inline;
+    }
+
+    .trainer-bio h4 {
+        display: inline;
+    }
+  
 
     .service-grid-container {
         grid-template-columns: 1fr 1fr;
